@@ -28,27 +28,27 @@ assign uo_out = result;
 always @(posedge clk)begin
   case (ALUOP)
     3'b000:begin
-    result = a + b;
+    result <= a + b;
     end
 
     3'b001:begin
-    result = a - b;
+    result <= a - b;
     end
 
     3'b010:begin
-    result = a * b;
+    result <= a * b;
     end
 
     3'b011:begin
-    result = a / b;
+    result <= a / b;
     end
 
     3'b100:begin
-    result = a & b;
+    result <= a & b;
     end
 
     3'b101:begin
-    result = a | b;
+    result <= a | b;
     end
   endcase
 end
