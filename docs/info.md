@@ -9,11 +9,20 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Input 2 4-bit words and one 3 bit word on the bidirectional pins in order to generate 6 different functions to use between A and B
+
+0 = +
+1 = -
+2 = x
+3 = /
+4 = AND
+5 = OR
 
 ## How to test
 
-Explain how to use your project
+A = 0000-1111
+B = 0000-1111
+IOU = 000-111
 
 ## External hardware
 
