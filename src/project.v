@@ -16,6 +16,8 @@ module tt_um_afedorowicz14 (
     input  wire       rst_n     // reset_n - low to reset
 );
 
+assign uio_oe = 0;
+assign uio_out = 0;
 reg [7:0] a;
 assign a = {4'b0000, ui_in[7:4]};
 reg [7:0] b;
@@ -50,6 +52,7 @@ always @(posedge clk)begin
     3'b101:begin
     result <= a | b;
     end
+    default: result <= 8'b0
   endcase
 end
   // All output pins must be assigned. If not used, assign to 0.
