@@ -52,7 +52,7 @@ always @(posedge clk)begin
     3'b101:begin
     result <= a | b;
     end
-    default: result <= 8'b0
+    default: result <= 8'b0;
   endcase
 end
   // All output pins must be assigned. If not used, assign to 0.
